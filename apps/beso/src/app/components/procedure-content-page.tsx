@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 import { NestedHeader } from './nested-header';
@@ -47,9 +48,12 @@ export function ProcedureContentPage({
       <NestedHeader />
       <section className="mx-auto max-w-4xl px-6 py-12">
         <h1 className="text-3xl font-semibold">{title}</h1>
-        <img
+        <Image
           src={imageUrl}
           alt={imageAlt}
+          width={1024}
+          height={683}
+          sizes="(max-width: 768px) 100vw, 940px"
           className="mt-6 h-auto w-full rounded-2xl border border-brief-line object-cover"
         />
         <div className="mt-5 space-y-4 text-brief-muted">
