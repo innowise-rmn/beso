@@ -1,0 +1,8 @@
+[build]
+  command = "npx nx build beso"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
