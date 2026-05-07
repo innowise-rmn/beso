@@ -1,5 +1,6 @@
 [build]
   command = "npx nx build beso"
+  publish = "apps/beso/.next"
 
 [build.environment]
   NODE_VERSION = "20"
